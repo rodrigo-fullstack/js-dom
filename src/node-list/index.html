@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node List e HTML Collection</title>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .container > :nth-child(n){
+            width: 100px;
+            height: 50px;
+            font-size: 2rem;
+        }
+
+        .container:nth-child(1){
+            background-color: red;
+        }
+        
+        .container:nth-child(2){
+            background-color: green;
+        }
+        
+        .container:nth-child(3){
+            background-color: orange;
+        }
+
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        
+        .goblin{
+            background-color: green;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="elements" name="container">
+        <div class="element" id="e01">1</div>
+        <div class="element" id="e02">2</div>
+        <div class="element">3</div>
+        <div class="element">4</div>
+        <div class="element">5</div>
+    </div>
+    
+    <div class="container" id="elements" name="container">
+        <div class="element">6</div>
+        <div class="element">7</div>
+        <div class="element">8</div>
+        <div class="element">9</div>
+        <div class="element">10</div>
+    </div>
+
+    <div class="container" id="elements" name="container">
+        <div class="element">11</div>
+        <div class="element">12</div>
+        <div class="element">13</div>
+        <div class="element">14</div>
+        <div class="element">15</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
