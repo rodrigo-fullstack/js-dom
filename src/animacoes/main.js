@@ -28,6 +28,30 @@ function animateTitle(div) {
             
         }
     );
+    // on finish após animação define conjunto de instruções após seu término
+    // .onfinish = () => {
+    // 
+    // };
+
+    // é possível fazer isso com event listener também
+    // // slider.elements[slider.current[0]].addEventListener('animationend', (e) => {
+    //     console.log('Fim animação');
+    //     // slider.elements[slider.current[0]].style.display = 'none';
+    //     slider.elements[slider.current[1]].animate(
+    //         [
+    //             {transform: 'translateX(0%)'},
+    //             {transform: 'translateX(-100%)'}
+    //         ],
+    //         {
+    //             duration: 1000,
+    //             iteration: Infinity,
+    //             fill: 'forwards', 
+    //             delay: 1000
+    //         }
+    //     );
+    //     // slider.elements[slider.current[0]].classList.toggle('absolute');
+    // });
+
 
 }
 
